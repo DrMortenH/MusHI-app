@@ -1,0 +1,16 @@
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fafaf9; color: #1a1a18; }
+input, select, textarea { font-family: inherit; font-size: 13px; padding: 7px 10px; border: 0.5px solid #d4d0c8; border-radius: 6px; background: #fff; color: #1a1a18; outline: none; width: 100%; }
+input:focus, select:focus, textarea:focus { border-color: #1D9E75; box-shadow: 0 0 0 2px rgba(29,158,117,0.15); }
+:root {
+  --color-text-primary: #1a1a18;
+  --color-text-secondary: #6b6860;
+  --color-text-tertiary: #a09c94;
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f5f3ee;
+  --color-border-tertiary: #e8e4dc;
+  --color-border-secondary: #d4d0c8;
+  --border-radius-sm: 4px;
+  --border-radius-md: 6px;
+  --border-radius-lg: 10px;
+}
