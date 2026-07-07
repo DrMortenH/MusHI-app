@@ -43,6 +43,7 @@ export default function App(){
   },[])
 
   useEffect(()=>{if(adminUnlocked)fetchAll()},[adminUnlocked,fetchAll])
+  useEffect(()=>{if(allSubmissions.length===0)return;const ms=[...new Set(allSubmissions.map(s=>s.month))];if(!ms.includes(reportMonth))setReportMonth(ms.sort().reverse()[0])},[allSubmissions])
 
   async function loadPrevious(){
     if(!form.email)return
